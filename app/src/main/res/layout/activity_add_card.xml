@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCardActivity">
+
+    <ImageView
+        android:id="@+id/CancelAddCard"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/ic_iconmonstr_x_mark_circle_thin" />
+
+    <ImageView
+        android:id="@+id/SaveCard"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="25dp"
+        android:src="@drawable/ic_iconmonstr_save_thin" />
+
+    <EditText
+        android:id="@+id/EnterQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="-1dp"
+        android:ems="30"
+        android:hint="Enter your question here." />
+
+    <EditText
+        android:id="@+id/EnterAnswer1"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="149dp"
+        android:layout_marginEnd="0dp"
+        android:ems="30"
+        android:hint="Enter your answer here." />
+
+    <EditText
+        android:id="@+id/EnterAnswer2"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="252dp"
+        android:layout_marginEnd="-1dp"
+        android:ems="30"
+        android:hint="Enter your answer here." />
+
+    <EditText
+        android:id="@+id/EnterAnswer3"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="354dp"
+        android:layout_marginEnd="0dp"
+        android:ems="30"
+        android:hint="Enter your answer here." />
+
+</RelativeLayout>
