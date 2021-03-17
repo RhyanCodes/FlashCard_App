@@ -11,6 +11,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.android.material.snackbar.Snackbar;
+
 public class MainActivity extends AppCompatActivity {
 
 
@@ -49,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
         TextView flashcard_answer1 = findViewById(R.id.flashcard_answer1);
         TextView flashcard_answer2 = findViewById(R.id.flashcard_answer2);
         TextView flashcard_answer3 = findViewById(R.id.flashcard_answer3);
+        ImageView toggle_choices_visibility = findViewById(R.id.toggle_choices_visibility);
+        ImageView toggle_choices_invisibility = findViewById(R.id.toggle_choices_invisibility);
 
         findViewById(R.id.flashcard_question).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,7 +77,8 @@ public class MainActivity extends AppCompatActivity {
          findViewById(R.id.toggle_choices_visibility).setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
-
+                 toggle_choices_visibility.setVisibility(View.INVISIBLE);
+                 toggle_choices_invisibility.setVisibility(View.VISIBLE);
                  flashcard_answer1.setVisibility(View.INVISIBLE);
                  flashcard_answer2.setVisibility(View.INVISIBLE);
                  flashcard_answer3.setVisibility(View.INVISIBLE);
@@ -83,7 +88,8 @@ public class MainActivity extends AppCompatActivity {
          findViewById(R.id.toggle_choices_invisibility).setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
-
+                 toggle_choices_invisibility.setVisibility(View.INVISIBLE);
+                 toggle_choices_visibility.setVisibility(View.VISIBLE);
                  flashcard_answer1.setVisibility(View.VISIBLE);
                  flashcard_answer2.setVisibility(View.VISIBLE);
                  flashcard_answer3.setVisibility(View.VISIBLE);
@@ -94,6 +100,22 @@ public class MainActivity extends AppCompatActivity {
              @Override
              public void onClick(View v) {
                  Intent intent = new Intent(MainActivity.this, AddCardActivity.class);
+                 MainActivity.this.startActivityForResult(intent, 100);
+             }
+         });
+
+         findViewById(R.id.edit_flashcard).setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 Intent intent = new Intent(MainActivity.this, AddCardActivity.class);
+                 String Question = ((TextView) findViewById(R.id.flashcard_question)).getText().toString();
+                 String Answer1 = ((TextView) findViewById(R.id.flashcard_answer1)).getText().toString();
+                 String Answer2 = ((TextView) findViewById(R.id.flashcard_answer2)).getText().toString();
+                 String Answer3 = ((TextView) findViewById(R.id.flashcard_answer3)).getText().toString();
+                 intent.putExtra("string1", Question);
+                 intent.putExtra("string2", Answer1);
+                 intent.putExtra("string3", Answer2);
+                 intent.putExtra("string4", Answer3);
                  MainActivity.this.startActivityForResult(intent, 100);
              }
          });
@@ -111,6 +133,9 @@ public class MainActivity extends AppCompatActivity {
             ((TextView) findViewById(R.id.flashcard_answer1)).setText(string2);
             ((TextView) findViewById(R.id.flashcard_answer2)).setText(string3);
             ((TextView) findViewById(R.id.flashcard_answer3)).setText(string4);
-        }
+            Snackbar.make(findViewById(R.id.flashcard_answer),
+                    "Flashcard saved successfully",
+                    Snackbar.LENGTH_SHORT).show();
+            }
     }
         }
