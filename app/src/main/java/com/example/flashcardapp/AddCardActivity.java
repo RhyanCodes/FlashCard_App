@@ -43,7 +43,7 @@ public class AddCardActivity extends AppCompatActivity {
                 String Answer2 = ((EditText) findViewById(R.id.EnterAnswer2)).getText().toString();
                 String Answer3 = ((EditText) findViewById(R.id.EnterAnswer3)).getText().toString();
                 if (Question.equals("") || Answer1.equals("") || Answer2.equals("") || Answer3.equals("")) {
-                    Toast.makeText(AddCardActivity.this, "Please enter a question and answer", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AddCardActivity.this, "Please enter a question and three answers!", Toast.LENGTH_SHORT).show();
                 }
                 else {
                     Intent data = new Intent();
