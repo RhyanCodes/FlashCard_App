@@ -6,7 +6,7 @@ Users can create a multiple choice question and answer and see it when the app i
 
 ### App Walk-though
 
-<img src="http://g.recordit.co/yhVqUF5D8Q.gif" width=200><br>
+<img src="http://g.recordit.co/ObEFje9LfU.gif" width=200><br>
 
 ## Required
 - [x] User can create a card and still see their created card when the app is relaunched.
