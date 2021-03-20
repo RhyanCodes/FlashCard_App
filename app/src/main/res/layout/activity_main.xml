@@ -125,4 +125,19 @@
         android:layout_marginStart="31dp"
         android:layout_marginBottom="18dp"
         android:src="@drawable/ic_iconmonstr_edit_8" />
+
+    <ImageView
+        android:id="@+id/next_flashcard"
+        android:layout_width="147dp"
+        android:layout_height="88dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="307dp"
+        android:layout_marginEnd="-3dp"
+        android:layout_marginBottom="336dp"
+        android:src="@drawable/ic_iconmonstr_arrow_28"
+        android:visibility="visible" />
+
 </RelativeLayout>
