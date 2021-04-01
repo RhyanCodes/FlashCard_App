@@ -29,7 +29,7 @@
         android:layout_marginTop="15dp"
         android:background="#f19828"
         android:gravity="center"
-        android:text="Helium"
+        android:text="Obama"
         android:textColor="@color/black"
         android:textSize="30sp"
         android:visibility="invisible" />
@@ -90,8 +90,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="167dp"
-        android:layout_marginBottom="14dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginBottom="17dp"
         android:src="@drawable/ic_iconmonstr_eye_8" />
 
     <ImageView
@@ -101,8 +101,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="168dp"
-        android:layout_marginBottom="11dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginBottom="18dp"
         android:src="@drawable/ic_iconmonstr_eye_7"
         android:visibility="invisible" />
 
@@ -112,8 +112,9 @@
         android:layout_height="40dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="44dp"
-        android:layout_marginBottom="14dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="173dp"
+        android:layout_marginBottom="22dp"
         android:src="@drawable/ic_iconmonstr_plus_circle_thin" />
 
     <ImageView
@@ -128,15 +129,15 @@
 
     <ImageView
         android:id="@+id/next_flashcard"
-        android:layout_width="147dp"
-        android:layout_height="88dp"
+        android:layout_width="134dp"
+        android:layout_height="103dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_marginTop="307dp"
-        android:layout_marginEnd="-3dp"
-        android:layout_marginBottom="336dp"
+        android:layout_marginTop="614dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="14dp"
         android:src="@drawable/ic_iconmonstr_arrow_28"
         android:visibility="visible" />
 
